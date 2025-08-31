@@ -3,7 +3,6 @@ import os
 
 CSV_FILE = "users.csv"
 
-# Initialize CSV if not present
 def init_csv():
     if not os.path.exists(CSV_FILE):
         with open(CSV_FILE, mode="w", newline="") as file:
