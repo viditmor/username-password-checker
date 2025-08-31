@@ -25,9 +25,8 @@ def login(username, password):
                         return "❌ Incorrect password!"
             return "❌ User not registered!"
     except FileNotFoundError:
-        return "Error: Users database not found!"
-    except Exception as e:
-        return f"Unexpected error: {e}"
+        return "⚠️ Error: Users database not found!"
+
 
 def register(username, password):
     try:
